@@ -72,7 +72,7 @@ func add_movies(m []movie) []movie {
 
 func get_movies(m []movie) {
 	for _, v := range m {
-		fmt.Println("id:", v.id, "\nname:", v.name, "\nquantity available for rent:", v.quantity, "\n")
+		fmt.Println("id:", v.id, "\nname:", v.name, "\nquantity available for rent:", v.quantity)
 	}
 }
 
