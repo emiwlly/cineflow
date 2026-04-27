@@ -14,7 +14,12 @@ type movie struct {
 }
 
 const space = "================================"
-var scanner = bufio.NewScanner(os.Stdin)
+type Scanner interface {
+	Scan() bool
+	Text() string
+}
+
+var scanner Scanner = bufio.NewScanner(os.Stdin)
 
 var movies []movie
 func main () {
